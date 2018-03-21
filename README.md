@@ -5,8 +5,6 @@ After completing this experiment you will be able to create your mandalas and us
 <img src="https://fronkonstin.com/wp-content/uploads/2018/03/IMG24.png" height="650" width="650" align="middle">
 
 
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -25,9 +23,12 @@ install.packages("rlist")
 
 A complete explanation of the experiment can be found [at fronkonstin](https://fronkonstin.com/2018/03/11/mandalas-colored/)
 
+
 ## Docker
 You can also build a Docker image with dependencies, and package with rstudio for
-nice interactive viewing of the plots. First, to build the image:
+nice interactive viewing of the plots. The image is available on [Docker Hub](https://hub.docker.com/r/vanessa/mandalas/) 
+and if you clone the repository, you can also build the image. Feel free to skip this step and move to the next
+section - when you run the container and it's not found locally, it will be pulled from Docker Hub!
 
 ```
 docker build -t vanessa/mandalas .
@@ -81,4 +82,4 @@ done
 
 ## Contributors
 
- - [@vsoch](https://twitter.com/vsoch): Dockerization!
+ - [@vsoch](https://twitter.com/vsoch): Dockerization
