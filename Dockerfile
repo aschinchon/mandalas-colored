@@ -1,15 +1,16 @@
 FROM rocker/tidyverse
 
-##################################################
+####################################################################
 #
 # docker build -t vanessa/mandalas .
-# docker run -p 8787:8787 vanessa/mandalas
+# docker run -p 8787:8787 vanessa/mandalas --rstudio
 # Visit localhost:8787 in your browser
 # log in: username:password as rstudio:rstudio
 #
-# docker run vanessa/mandalas
+# OR just generate a graphic
+# docker run -v /tmp:/data vanessa/mandalas --outfile mandala.png
 #
-##################################################
+####################################################################
 
 RUN Rscript -e "install.packages('deldir')"
 RUN Rscript -e "install.packages('colourlovers')"
